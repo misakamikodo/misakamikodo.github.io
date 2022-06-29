@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>恭喜，站点创建成功！</title>
+    <title>陈成愿</title>
     <style>
         .container {
             width: 60%;
@@ -16,18 +16,40 @@
             padding-left: 20px;
         }
 
-            ul li {
-                line-height: 2.3
-            }
-
-        a {
-            color: #20a53a
+        ul li {
+            line-height: 2.3
+        }
+        
+        .footer {
+            font-size: 12px;
+            position: fixed;
+            right: 3px;
+            bottom: 2px;
+        }
+        .footer>a {
+            color: #FFF !important;
+        }
+        .footer-bottom>p {
+            text-align: center;
+            margin: 3px 0;
+        }
+        .beian-img {
+            display: inline-block;
+            height: 12px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>陈成愿</h1>
+    </div>
+    <div class="footer" :class="whatStyle">
+        <p>
+            <a href="http://beian.miit.gov.cn" target="_blank" title="备案信息查询">
+                <img class="beian-img" src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png">
+                互联网ICP备案：浙ICP备20005374号
+            </a>
+        </p>
     </div>
 </body>
 </html>
